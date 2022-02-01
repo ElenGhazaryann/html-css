@@ -5,78 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./script.js"></script>
-    <title>Document</title>
-
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <title>Document</title>
   </head>
   <body>
-    <header class="container">
-      <img
-        src="https://i.pinimg.com/736x/50/53/8d/50538daebe4475f5fc7185e59ec6b31a.jpg"
-        alt="logo"
-        width="150px"
-        height="150px"
-      />
-
-      <ul>
-        <li><a href="https://www.google.com/">First</a></li>
-        <li><a href="https://www.google.com/">Second</a></li>
-        <li><a href="https://www.google.com/">Third</a></li>
-      </ul>
+    <!-- header -->
+    <header class="header container">
+      <div class="logo">
+        <h2>CompanyName</h2>
+      </div>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="https://www.google.com/">First</a></li>
+          <li class="nav-li"><a href="https://www.google.com/">Second</a></li>
+          <li class="nav-li"><a href="https://www.google.com/">Third</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <section class="container">
-      <div class="first-page">
-        <div class="links">
+    <!-- main -->
+    <section>
+      <div class="img-attach">
+        <h1>Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. Esse, consectetur.</h1>
+      </div>
+      <div class="first-page container">
+        <div class="links-wrapper">
           <a href="https://javascript.info/">link1</a>
           <a href="https://javascript.info/">link2</a>
           <a href="https://javascript.info/">link3</a>
+          <a href="https://javascript.info/">link3</a>
+          <a href="https://javascript.info/">link3</a>
+          <a href="https://javascript.info/">link3</a>
+          <a href="https://javascript.info/">link3</a>
         </div>
 
-        <div class="images">
-          <p>
+        <div class="images-wrapper">
+          <div class="images-child">
+            <!-- <div class="image"> -->
             <img
-              src="https://cdnn21.img.ria.ru/images/151729/95/1517299559_64:0:2030:1106_600x0_80_0_0_e96dc94773c5e95e36f3997b346a6135.jpg"
-              alt="image1"
-              height="276px"
-            />
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-          <p>
-            <img
-              src="https://cdnn21.img.ria.ru/images/151729/95/1517299559_64:0:2030:1106_600x0_80_0_0_e96dc94773c5e95e36f3997b346a6135.jpg"
+              src="./img/grey-cat.webp"
               alt="image2"
-              height="276px"
+              height="230px"
             />
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
+            <!-- </div> -->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              earum dolores ducimus facilis id libero nesciunt recusandae. Rem,
+              possimus molestias pariatur, sapiente dolorem, aperiam repellendus
+              neque tempora fugiat ab repudiandae?
+            </p>
+          </div>
+          <div class="images-child">
+            <div class="image">
+              <img
+              src="./img/grey-cat.webp"
+                alt="image2"
+                height="230px"
+              />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, reprehenderit..
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="second-page">
-        <form action="">
-          <input type="text" /> <label for="text">First Name</label>
-          <input type="text" /> <label for="text">Last Name</label>
+      <div class="form-wrapper container">
+        <form class="second-page" action="">
+          <input class="input" type="text" placeholder="First Name" />
+          <input class="input" type="text" placeholder="Second Name" />
+          <input class="input" type="password" placeholder="Password" />
+          <input class="input" type="email" placeholder="Email" />
 
-          <input type="password" /> <label for="password">Password</label>
+          <div class="radio-wrapper">
+            <div class="radio-child">
+              <input type="radio" name="" id="" />
+              <label for="radio">male</label>
+            </div>
 
-          <input type="email" /> <label for="email">Email</label>
-          <input type="radio" name="" id="" /> <label for="radio">male</label>
-
-          <input type="radio" name="" id="" /> <label for="radio">female</label>
-          <input type="submit" name="" id="" />
+            <div class="radio-child">
+              <input type="radio" name="" id="" />
+              <label for="radio">female</label>
+            </div>
+          </div>
+          <input class="submit" type="submit" name="" id="" />
         </form>
       </div>
 
-      <div class="third-page">
-        <ul>
+      <div class="third-page container">
+        <ul class="list">
           <li>First</li>
           <li>Second</li>
           <li>Third</li>
           <li>Fourth</li>
         </ul>
 
-        <ol>
+        <ol class="list">
           <li>First</li>
           <li>Second</li>
           <li>Third</li>
@@ -84,5 +110,38 @@
         </ol>
       </div>
     </section>
+    <!-- footer -->
+
+    <footer>
+      <div class="row container">
+        <div class="row-items">
+          <h4>Company</h4>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+        </div>
+
+        <div class="row-items">
+          <h4>Contact</h4>
+          <a href="#">Phone</a>
+          <a href="#">E-Mail</a>
+          <a href="#">Location</a>
+        </div>
+        <div class="row-items row-social">
+          <h4>Follow Us</h4>
+          <div class="social-media">
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://web.telegram.org/z/"
+              ><i class="fab fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
